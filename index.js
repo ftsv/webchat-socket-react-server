@@ -2,7 +2,7 @@ const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http, {
     cors:{
-    origin:"https://amazing-kirch-6a3942.netlify.app/",
+    origin:"*",
     methods: ["GET","POST"],
     credentials: true,
     allowEIO4: true
