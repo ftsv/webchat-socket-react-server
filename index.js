@@ -1,12 +1,12 @@
 const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http, {
-    // cors:{
-    // origin:"https://amazing-kirch-6a3942.netlify.app/",
-    // methods: ["GET","POST"],
-    // credentials: true,
-    // allowEIO4: true
-    // },
+    cors:{
+    origin:"https://netlify.app/",
+    methods: ["GET","POST"],
+    credentials: true,
+    allowEIO4: true
+    },
     transport: ['websocket']
 });
 const { addUser, getUser, removeUser, getUsersInRooms } = require('./users')
