@@ -51,7 +51,7 @@ router.get('/timezones', (req, res) => {
     "timezone": "+12",
     "name": "Петропавловск-Камчатский"
   }
-]))
+])
 })
 
 module.exports = router; 
