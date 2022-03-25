@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/timezones', (req, res) => {
-    res.send.json([
+    return res.json([
   {
     "timezone": "+2",
     "name": "Калининград"
